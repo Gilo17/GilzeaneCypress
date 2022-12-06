@@ -10,7 +10,7 @@ describe('Adding an item to cart', () => {
 
     
 
-    it('should add more than one items to cart', () => {
+    it.only('should add more than one items to cart', () => {
         Authentication.login('standard_user', 'secret_sauce')
         cy.get(Authentication.itemNames).should('be.visible')
 
