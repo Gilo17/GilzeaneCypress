@@ -8,7 +8,7 @@ describe('Adding an item to cart', () => {
         cy.visit('/')
     })
 
-    it('should add Sauce Labs Bolt T-shirt item to cart', () => {
+    it.only('should add Sauce Labs Bolt T-shirt item to cart', () => {
         Authentication.login('standard_user','secret_sauce')
         cy.get(Authentication.itemNames).should('be.visible')
        
